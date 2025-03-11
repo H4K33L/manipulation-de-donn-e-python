@@ -10,3 +10,23 @@ Number of survived people : 87 (47.28%)
 Classe 3 :
 Number of dead people : 372 (75.76%)
 Number of survived people : 119 (24.24%)
+
+Passagers avec cabine :
+Number of dead people : 68 (33.33%)
+Number of survived people : 136 (66.67%)
+
+Passagers sans cabine :
+Number of dead people : 481 (70.01%)
+Number of survived people : 206 (29.99%)
+
+Classe 1 :
+Nombre de personnes avec cabine : 176 (81.48%)
+Nombre de personnes sans cabine : 40 (18.52%)
+
+Classe 2 :
+Nombre de personnes avec cabine : 16 (8.70%)
+Nombre de personnes sans cabine : 168 (91.30%)
+
+Classe 3 :
+Nombre de personnes avec cabine : 12 (2.44%)
+Nombre de personnes sans cabine : 479 (97.56%)
