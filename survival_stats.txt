@@ -1,0 +1,12 @@
+
+Classe 1 :
+Number of dead people : 80 (37.04%)
+Number of survived people : 136 (62.96%)
+
+Classe 2 :
+Number of dead people : 97 (52.72%)
+Number of survived people : 87 (47.28%)
+
+Classe 3 :
+Number of dead people : 372 (75.76%)
+Number of survived people : 119 (24.24%)
