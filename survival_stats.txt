@@ -1,32 +1,56 @@
 
-Classe 1 :
-Number of dead people : 80 (37.04%)
-Number of survived people : 136 (62.96%)
+Gender distribution in the dataset:
+Number of men: 577 (64.76%)
+Number of women: 314 (35.24%)
 
-Classe 2 :
-Number of dead people : 97 (52.72%)
-Number of survived people : 87 (47.28%)
+Class 1:
+Number of deaths: 80 (37.04%)
+Number of survivors: 136 (62.96%)
+Number of people with a cabin: 176 (81.48%)
+Number of people without a cabin: 40 (18.52%)
+Number of men: 122 (56.48%)
+Number of women: 94 (43.52%)
+Number of dead men: 77 (96.25%)
+Number of dead women: 3 (3.75%)
+Number of surviving men: 45 (33.09%)
+Number of surviving women: 91 (66.91%)
 
-Classe 3 :
-Number of dead people : 372 (75.76%)
-Number of survived people : 119 (24.24%)
+Class 2:
+Number of deaths: 97 (52.72%)
+Number of survivors: 87 (47.28%)
+Number of people with a cabin: 16 (8.70%)
+Number of people without a cabin: 168 (91.30%)
+Number of men: 108 (58.70%)
+Number of women: 76 (41.30%)
+Number of dead men: 91 (93.81%)
+Number of dead women: 6 (6.19%)
+Number of surviving men: 17 (19.54%)
+Number of surviving women: 70 (80.46%)
 
-Passagers avec cabine :
-Number of dead people : 68 (33.33%)
-Number of survived people : 136 (66.67%)
+Class 3:
+Number of deaths: 372 (75.76%)
+Number of survivors: 119 (24.24%)
+Number of people with a cabin: 12 (2.44%)
+Number of people without a cabin: 479 (97.56%)
+Number of men: 347 (70.67%)
+Number of women: 144 (29.33%)
+Number of dead men: 300 (80.65%)
+Number of dead women: 72 (19.35%)
+Number of surviving men: 47 (39.50%)
+Number of surviving women: 72 (60.50%)
 
-Passagers sans cabine :
-Number of dead people : 481 (70.01%)
-Number of survived people : 206 (29.99%)
+Passengers with cabin:
+Number of deaths: 68 (33.33%)
+Number of survivors: 136 (66.67%)
 
-Classe 1 :
-Nombre de personnes avec cabine : 176 (81.48%)
-Nombre de personnes sans cabine : 40 (18.52%)
+Passengers without cabin:
+Number of deaths: 481 (70.01%)
+Number of survivors: 206 (29.99%)
 
-Classe 2 :
-Nombre de personnes avec cabine : 16 (8.70%)
-Nombre de personnes sans cabine : 168 (91.30%)
+Males passengers:
+Number of deaths: 468 (81.11%)
+Number of survivors: 109 (18.89%)
 
-Classe 3 :
-Nombre de personnes avec cabine : 12 (2.44%)
-Nombre de personnes sans cabine : 479 (97.56%)
+Females passengers:
+Number of deaths: 81 (25.80%)
+Number of survivors: 233 (74.20%)
