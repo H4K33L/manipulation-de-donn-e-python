@@ -30,7 +30,7 @@ with open("survival_stats.txt", "w") as f:
         
         sum_dead = len(dead_pclass)
         sum_alive = len(alive_pclass)
-        total_pclass = sum_dead + sum_alive if (sum_dead + sum_alive) > 0 else 1  # Avoid division by zero
+        total_pclass = sum_dead + sum_alive if (sum_dead + sum_alive) > 0 else 1 
 
         class_subset = df[df["Pclass"] == pclass]
         
@@ -93,6 +93,7 @@ with open("survival_stats.txt", "w") as f:
 
         print(stats)
         f.write(stats)
+
     for gender in ["male", "female"]:
         label = f"{gender}s"
         
@@ -101,7 +102,7 @@ with open("survival_stats.txt", "w") as f:
         
         sum_dead = len(dead_gender)
         sum_alive = len(alive_gender)
-        total = sum_dead + sum_alive if (sum_dead + sum_alive) > 0 else 1  # Avoid division by zero
+        total = sum_dead + sum_alive if (sum_dead + sum_alive) > 0 else 1 
         
         dead_percentage = (sum_dead / total) * 100
         alive_percentage = (sum_alive / total) * 100
@@ -112,3 +113,26 @@ with open("survival_stats.txt", "w") as f:
         
         print(stats)
         f.write(stats)
+
+    bins = [0, 12, 17, 60, float('inf')] 
+    labels = ['Children (0-12)', 'Teenagers (13-17)', 'Adults (18-60)', 'Seniors (60+)']
+    df['AgeGroup'] = pd.cut(df['Age'], bins=bins, labels=labels)
+
+    for age_group in labels:
+        dead_age_group = df[(df["Survived"] == 0) & (df["AgeGroup"] == age_group)]
+        alive_age_group = df[(df["Survived"] == 1) & (df["AgeGroup"] == age_group)]
+        
+        sum_dead = len(dead_age_group)
+        sum_alive = len(alive_age_group)
+        total = sum_dead + sum_alive if (sum_dead + sum_alive) > 0 else 1 
+        
+        dead_percentage = (sum_dead / total) * 100
+        alive_percentage = (sum_alive / total) * 100
+
+        stats = (f"\n{age_group} passengers:\n"
+                 f"Number of deaths: {sum_dead} ({dead_percentage:.2f}%)\n"
+                 f"Number of survivors: {sum_alive} ({alive_percentage:.2f}%)\n")
+        
+        print(stats)
+        f.write(stats)
+

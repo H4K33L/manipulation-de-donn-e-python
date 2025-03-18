@@ -54,3 +54,19 @@ Number of survivors: 109 (18.89%)
 Females passengers:
 Number of deaths: 81 (25.80%)
 Number of survivors: 233 (74.20%)
+
+Children (0-12) passengers:
+Number of deaths: 29 (42.03%)
+Number of survivors: 40 (57.97%)
+
+Teenagers (13-17) passengers:
+Number of deaths: 23 (52.27%)
+Number of survivors: 21 (47.73%)
+
+Adults (18-60) passengers:
+Number of deaths: 355 (61.31%)
+Number of survivors: 224 (38.69%)
+
+Seniors (60+) passengers:
+Number of deaths: 17 (77.27%)
+Number of survivors: 5 (22.73%)
