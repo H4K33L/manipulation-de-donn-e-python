@@ -85,7 +85,7 @@ if __name__ == "__main__":
     df = pd.read_csv(input_file)
     
     # Nom du fichier de sortie
-    output_file = "diagnostic_valeurs_manquantes.txt"
+    output_file = "output/diagnostic_valeurs_manquantes.txt"
     
     # Appeler la fonction de diagnostic et écrire dans le fichier
     diagnostic_valeurs_manquantes(df, output_file)
