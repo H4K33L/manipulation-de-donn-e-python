@@ -443,15 +443,15 @@ Ligne | Valeurs manquantes
 417    | 2
 ==============================
 
-Colonnes avec plus de 50% de valeurs manquantes, à supprimer :
+Colonnes avec plus de 50% de valeurs manquantes, a supprimer :
 Cabin
 ==============================
 
-Lignes avec plus de 50% de valeurs manquantes, à supprimer :
-Aucune ligne à supprimer.
+Lignes avec plus de 50% de valeurs manquantes, a supprimer :
+Aucune ligne a supprimer.
 ==============================
 
-Colonnes à imputer (moins de 50% de valeurs manquantes) :
+Colonnes a imputer (moins de 50% de valeurs manquantes) :
 PassengerId
 Pclass
 Name
