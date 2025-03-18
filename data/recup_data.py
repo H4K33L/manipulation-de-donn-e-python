@@ -9,7 +9,7 @@ df = pd.read_csv("../titanic/train.csv")
 
 df["Has_Cabin"] = df["Cabin"].notna()
 
-with open("survival_stats.txt", "w") as f:
+with open("output/survival_stats.txt", "w") as f:
     total_passengers = len(df)
     total_males = len(df[df["Sex"] == "male"])
     total_females = len(df[df["Sex"] == "female"])

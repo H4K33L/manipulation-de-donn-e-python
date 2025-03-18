@@ -23,6 +23,6 @@ survied = pd.DataFrame({
     "average": [av_total, round(av_died, 2), round(av_alive, 2)]
 })
 
-survied.to_csv("survived.csv", index=False)
+survied.to_csv("output/survived.csv", index=False)
 
 print("Tout est dans 'survived.csv' !")
