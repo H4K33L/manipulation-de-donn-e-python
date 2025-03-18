@@ -81,7 +81,7 @@ def diagnostic_valeurs_manquantes(df, output_file):
 # Exemple d'utilisation
 if __name__ == "__main__":
     # Charger un fichier CSV
-    input_file = "../titanic/test.csv"  # Remplacer par le chemin du fichier CSV
+    input_file = "../titanic/train.csv"  # Remplacer par le chemin du fichier CSV
     df = pd.read_csv(input_file)
     
     # Nom du fichier de sortie
