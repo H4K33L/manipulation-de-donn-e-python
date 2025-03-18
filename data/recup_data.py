@@ -5,7 +5,7 @@ print("Python Version:", sys.version)
 print("Pandas Version:", pd.__version__)
 print("Installation OK, let's start!")
 
-df = pd.read_csv("titanic/train.csv")
+df = pd.read_csv("../titanic/train.csv")
 
 df["Has_Cabin"] = df["Cabin"].notna()
 

@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("titanic/test.csv")
+df = pd.read_csv("../titanic/test.csv")
 
 print(len(df["PassengerId"]))
 for pclass in sorted(df["Pclass"].unique()):

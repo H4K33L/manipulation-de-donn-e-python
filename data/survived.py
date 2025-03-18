@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("titanic/train.csv")
+df = pd.read_csv("../titanic/train.csv")
 
 total_passengers = df.shape[0]
 
