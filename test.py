@@ -6,6 +6,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 def preprocess_data(filepath, imputer=None):
     # tri des données, récuperation des importantes et supression des inutiles
@@ -50,6 +52,16 @@ def evaluate_metrics(y_test, y_pred):
 
     print(f"Accuracy: {acc:.4f}")
     print("Matrice de confusion :\n", cm)
+    # Visualisation de la matrice de confusion
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['Not Survived', 'Survived'], yticklabels=['Not Survived', 'Survived'])
+    plt.xlabel('Predicted')
+    plt.ylabel('True')
+    plt.title('Confusion Matrix')
+    
+    # Sauvegarde de la matrice de confusion sous forme de PNG
+    plt.savefig("confusion_matrix.png", format="png")
+    plt.close()
 
 # le lancement du programe
 if __name__ == "__main__":
