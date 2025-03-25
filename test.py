@@ -1,32 +1,61 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKFold
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
+from sklearn.preprocessing import StandardScaler
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import make_pipeline
 
-def preprocess_data(filepath):
+def preprocess_data(filepath, imputer=None):
     df = pd.read_csv(filepath)
+    
+    # Imputation des valeurs manquantes pour Age et Fare
+    if imputer is None:
+        imputer = SimpleImputer(strategy="mean")
+        df[['Age', 'Fare']] = imputer.fit_transform(df[['Age', 'Fare']])
+    else:
+        df[['Age', 'Fare']] = imputer.transform(df[['Age', 'Fare']])
+    
+    # Ajout de la colonne isMale
     df['isMale'] = df["Sex"].map({'male': 1, 'female': 0})
-    df['Age'] = df['Age'].fillna(df['Age'].mean())
-    df['Fare'] = df['Fare'].fillna(df['Fare'].median())
+    
+    # Remplir la colonne Embarked avec la valeur la plus fréquente
     df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
+    
+    # Suppression des colonnes inutiles
     df = df.drop(['Name', 'Sex', 'Ticket', 'Cabin'], axis=1)
+    
+    # Convertir la variable 'Embarked' en variables binaires
     df = pd.get_dummies(df, columns=['Embarked'], drop_first=True)
+    
     return df
 
-def train_and_evaluate(df, model_type="logistic"):
+def train_and_evaluate(df, model_type="random_forest"):
     X = df.drop('Survived', axis=1)
     y = df['Survived']
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
+    
+    # Séparation des données en entraînement et test
+    X_train, _, y_train, _ = train_test_split(X, y, test_size=None, random_state=42)
+    X_test = preprocess_data("titanic/test.csv")
+    y_test = pd.read_csv("titanic/gender_submission.csv")['Survived']
+    # Création du modèle
     if model_type == "logistic":
         model = LogisticRegression(max_iter=1000)
     elif model_type == "random_forest":
         model = RandomForestClassifier(n_estimators=100, random_state=42)
     
-    model.fit(X_train, y_train)
-    y_pred = model.predict(X_test)
+    # Normalisation des données (standardisation)
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+    
+    # Entraînement du modèle
+    model.fit(X_train_scaled, y_train)
+    
+    # Prédictions
+    y_pred = model.predict(X_test_scaled)
 
     return y_test, y_pred
 
@@ -40,7 +69,7 @@ def evaluate_metrics(y_test, y_pred):
     print("Matrice de confusion :\n", cm)
 
 if __name__ == "__main__":
-    filepath = "train.csv"
+    filepath = "titanic/train.csv"
     df = preprocess_data(filepath)
     y_test, y_pred = train_and_evaluate(df, model_type="random_forest")
     evaluate_metrics(y_test, y_pred)
