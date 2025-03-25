@@ -1,14 +1,15 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKFold
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
+from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
-from sklearn.pipeline import make_pipeline
 
 def preprocess_data(filepath, imputer=None):
+    # tri des données, récuperation des importantes et supresion des inutiles
+    # mapage des donées non compréensible tel que sex
     df = pd.read_csv(filepath)
     if imputer is None:
         imputer = SimpleImputer(strategy="mean")
@@ -23,6 +24,7 @@ def preprocess_data(filepath, imputer=None):
     return df
 
 def train_and_evaluate(df, model_type="random_forest"):
+    # entrainement du modéle et comparaison avec les donées réelles
     X = df.drop('Survived', axis=1)
     y = df['Survived']
     X_train, _, y_train, _ = train_test_split(X, y, test_size=None, random_state=42)
@@ -42,12 +44,14 @@ def train_and_evaluate(df, model_type="random_forest"):
     return y_test, y_pred
 
 def evaluate_metrics(y_test, y_pred):
+    # évaluation de la présision
     acc = accuracy_score(y_test, y_pred)
     cm = confusion_matrix(y_test, y_pred)
 
     print(f"Accuracy: {acc:.4f}")
     print("Matrice de confusion :\n", cm)
 
+# le lencemen t du programe
 if __name__ == "__main__":
     filepath = "titanic/train.csv"
     df = preprocess_data(filepath)
