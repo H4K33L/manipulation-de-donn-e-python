@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 
 def preprocess_data(filepath, imputer=None):
-    # tri des données, récuperation des importantes et supresion des inutiles
+    # tri des données, récuperation des importantes et supression des inutiles
     # mapage des donées non compréensible tel que sex
     df = pd.read_csv(filepath)
     if imputer is None:
@@ -51,7 +51,7 @@ def evaluate_metrics(y_test, y_pred):
     print(f"Accuracy: {acc:.4f}")
     print("Matrice de confusion :\n", cm)
 
-# le lencemen t du programe
+# le lancement du programe
 if __name__ == "__main__":
     filepath = "titanic/train.csv"
     df = preprocess_data(filepath)
