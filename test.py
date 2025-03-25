@@ -11,23 +11,18 @@ from sklearn.pipeline import make_pipeline
 def preprocess_data(filepath, imputer=None):
     df = pd.read_csv(filepath)
     
-    # Imputation des valeurs manquantes pour Age et Fare
     if imputer is None:
         imputer = SimpleImputer(strategy="mean")
         df[['Age', 'Fare']] = imputer.fit_transform(df[['Age', 'Fare']])
     else:
         df[['Age', 'Fare']] = imputer.transform(df[['Age', 'Fare']])
     
-    # Ajout de la colonne isMale
     df['isMale'] = df["Sex"].map({'male': 1, 'female': 0})
     
-    # Remplir la colonne Embarked avec la valeur la plus fréquente
     df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
     
-    # Suppression des colonnes inutiles
     df = df.drop(['Name', 'Sex', 'Ticket', 'Cabin'], axis=1)
     
-    # Convertir la variable 'Embarked' en variables binaires
     df = pd.get_dummies(df, columns=['Embarked'], drop_first=True)
     
     return df
@@ -36,25 +31,20 @@ def train_and_evaluate(df, model_type="random_forest"):
     X = df.drop('Survived', axis=1)
     y = df['Survived']
     
-    # Séparation des données en entraînement et test
     X_train, _, y_train, _ = train_test_split(X, y, test_size=None, random_state=42)
     X_test = preprocess_data("titanic/test.csv")
     y_test = pd.read_csv("titanic/gender_submission.csv")['Survived']
-    # Création du modèle
     if model_type == "logistic":
         model = LogisticRegression(max_iter=1000)
     elif model_type == "random_forest":
         model = RandomForestClassifier(n_estimators=100, random_state=42)
     
-    # Normalisation des données (standardisation)
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     
-    # Entraînement du modèle
     model.fit(X_train_scaled, y_train)
     
-    # Prédictions
     y_pred = model.predict(X_test_scaled)
 
     return y_test, y_pred
