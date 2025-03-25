@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
+from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 
@@ -50,11 +50,9 @@ def train_and_evaluate(df, model_type="random_forest"):
 
 def evaluate_metrics(y_test, y_pred):
     acc = accuracy_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred, average='binary')
     cm = confusion_matrix(y_test, y_pred)
 
     print(f"Accuracy: {acc:.4f}")
-    print(f"F1-score: {f1:.4f}")
     print("Matrice de confusion :\n", cm)
 
 if __name__ == "__main__":
