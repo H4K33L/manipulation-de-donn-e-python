@@ -1,12 +1,11 @@
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKFold
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, f1_score, confusion_matrix
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
-from sklearn.pipeline import make_pipeline
 
 def preprocess_data(filepath, imputer=None):
     df = pd.read_csv(filepath)
