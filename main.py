@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from titanic_preprocessor import TitanicPreprocessor
-from titanic_model import TitanicModel
+from src.preprocessor import TitanicPreprocessor
+from src.model import TitanicModel
 
 if __name__ == "__main__":
     filepath = "data/train.csv"
