@@ -28,7 +28,7 @@ class TitanicPreprocessor:
         df['Fare'] = df['Fare'].fillna(self.fare_median)
         df['Embarked'] = df['Embarked'].fillna(self.most_frequent_embarkement)
         df['isMale'] = df['Sex'].map({'male': 1, 'female': 0})
-        df = df.drop(['Name', 'Sex', 'Ticket', 'Cabin'], axis=1)
+        df = df.drop(['Name', 'Sex', 'Ticket', 'Cabin', 'PassengerId'], axis=1)
         df = pd.get_dummies(df, columns=['Embarked'], drop_first=True)
 
         return df
