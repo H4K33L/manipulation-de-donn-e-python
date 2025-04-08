@@ -15,7 +15,7 @@ class TitanicModel:
         """ Entraîne le modèle sur les données fournies. """
         X_train_scaled = self.scaler.fit_transform(X_train)
         self.model.fit(X_train_scaled, y_train)
-    
+        
     def predict(self, X):
         """ Prédit les résultats à partir des données d'entrée. """
         X_scaled = self.scaler.transform(X)
