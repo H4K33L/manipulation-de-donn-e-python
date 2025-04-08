@@ -21,7 +21,7 @@ def datasets():
         'Fare': [7.8292, 7.0, 71.2833, 7.25, 8.5, 14.4542, 21.075, 8.05, 10.05, 10.5],
         'Cabin': [None, None, 'C85', 'C123', None, 'E46', None, None, None, 'B28'],
         'Embarked': ['Q', 'S', 'S', 'C', 'C', 'S', 'S', 'S', 'S', 'S'],
-        'Survived': [0, 1, 1, 1, 0, 0, 1, 0, 1, 0]  # 1 means survived, 0 means died
+        'Survived': [0, 1, 1, 1, 0, 0, 1, 0, 1, 0]
     }
     df = pd.DataFrame(data)
     y = df['Survived']
