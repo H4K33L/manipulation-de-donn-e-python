@@ -41,12 +41,3 @@ class TitanicPreprocessor:
         """
         self.fit(df)
         return self.transform(df)
-
-    def preprocess_data(self, filepath):
-        """
-        Charge et prétraite les données à partir d'un fichier CSV.
-        :param filepath: Chemin vers le fichier CSV
-        :return: DataFrame prétraité
-        """
-        df = pd.read_csv(filepath)
-        return self.fit_transform(df)
