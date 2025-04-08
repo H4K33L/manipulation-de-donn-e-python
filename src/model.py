@@ -28,3 +28,4 @@ class TitanicModel:
         cm = confusion_matrix(y_test, y_pred)
         print(f"Accuracy: {acc:.4f}")
         print("Matrice de confusion :\n", cm)
+        return acc
