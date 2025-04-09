@@ -1,0 +1,60 @@
+CustomerId,CustomerName,Country,EmployeeId,EmployeeName,TotalSpent,NumberOfPurchases,GenresPurchased,AvgTrackDurationMinutes,UniqueTracksPurchased
+6,Helena Holý,Czech Republic,5,Johnson Steve,502.62,7,"Rock,R&B/Soul,Electronica/Dance,Alternative & Punk,Blues,Latin,TV Shows,Science Fiction,Drama",16.54871447368421,38
+26,Richard Cunningham,USA,4,Park Margaret,474.62,7,"Alternative & Punk,Rock,Latin,Sci Fi & Fantasy,Drama,TV Shows,Metal",14.70613157894737,38
+45,Ladislav Kovács,Hungary,3,Peacock Jane,446.62,7,"Alternative & Punk,Rock,Latin,Metal,Drama,TV Shows,Comedy,Sci Fi & Fantasy,R&B/Soul,Electronica/Dance,Blues",10.018983771929824,38
+46,Hugh O'Reilly,Ireland,3,Peacock Jane,446.62,7,"Latin,Jazz,Blues,TV Shows,Drama,Rock,Metal,Alternative & Punk",12.547365350877193,38
+57,Luis Rojas,Chile,5,Johnson Steve,415.62,7,"Rock,Easy Listening,Latin,Soundtrack,Metal,Alternative & Punk,Science Fiction,Sci Fi & Fantasy,Drama,TV Shows,Blues,Classical",13.827056140350876,38
+7,Astrid Gruber,Austria,5,Johnson Steve,404.62,7,"Metal,TV Shows,Drama,Rock,Jazz,Latin,Classical,R&B/Soul,Pop",9.868181578947368,38
+25,Victor Stevens,USA,5,Johnson Steve,404.62,7,"Alternative & Punk,Rock,Latin,Metal,TV Shows,Comedy,R&B/Soul,Hip Hop/Rap",6.819879824561403,38
+37,Fynn Zimmermann,Germany,3,Peacock Jane,388.62,7,"Latin,Rock,Alternative & Punk,Easy Listening,Soundtrack,Jazz,Metal,TV Shows,Science Fiction,Drama",10.431075877192983,38
+24,Frank Ralston,USA,3,Peacock Jane,378.62,7,"Rock,TV Shows,Latin,Alternative,Classical,Comedy,R&B/Soul,Alternative & Punk,Metal,Hip Hop/Rap",9.008817105263157,38
+5,František Wichterlová,Czech Republic,4,Park Margaret,376.62,7,"Rock,Pop,Jazz,Alternative & Punk,Latin,Metal,Drama,TV Shows",6.592529385964912,38
+43,Isabelle Mercier,France,3,Peacock Jane,376.62,7,"Alternative & Punk,Classical,Rock,Jazz,Hip Hop/Rap,Electronica/Dance,Drama,TV Shows,Alternative",7.271217543859649,38
+28,Julia Barnett,USA,5,Johnson Steve,370.62,7,"Alternative & Punk,Rock,Latin,Metal,Comedy,Sci Fi & Fantasy",10.398106578947369,38
+4,Bjørn Hansen,Norway,4,Park Margaret,362.62,7,"Rock,Latin,Electronica/Dance,Drama,World,Alternative,Classical,Alternative & Punk",7.05322850877193,38
+17,Jack Smith,USA,5,Johnson Steve,352.62,7,"Jazz,Rock,Metal,Latin,Bossa Nova,Alternative & Punk,Easy Listening,Soundtrack,TV Shows,Science Fiction",6.41240701754386,38
+34,João Fernandes,Portugal,4,Park Margaret,352.62,7,"Alternative & Punk,Rock,Latin,R&B/Soul,Electronica/Dance,World,Metal,Sci Fi & Fantasy,TV Shows,Pop",6.457718859649122,38
+48,Johannes Van der Berg,Netherlands,5,Johnson Steve,352.62,7,"Alternative & Punk,Latin,Rock,Metal,Blues,Sci Fi & Fantasy,Pop",8.02843245614035,38
+44,Terhi Hämäläinen,Finland,3,Peacock Jane,350.62,7,"Rock,Latin,Jazz,Sci Fi & Fantasy,Alternative & Punk,Reggae,Metal",9.34984298245614,38
+15,Jennifer Peterson,Canada,3,Peacock Jane,343.62,7,"Rock,Latin,World,Metal,Hip Hop/Rap,Electronica/Dance,Drama,Bossa Nova",5.422226315789474,38
+51,Joakim Johansson,Sweden,5,Johnson Steve,340.62,7,"Metal,Rock,Alternative & Punk,TV Shows,Jazz,Latin,World",6.4399342105263155,38
+1,Luís Gonçalves,Brazil,3,Peacock Jane,338.62,7,"Sci Fi & Fantasy,Rock,Classical,Latin,Reggae,Pop,Soundtrack,Metal",6.4777622807017545,38
+3,François Tremblay,Canada,3,Peacock Jane,338.62,7,"TV Shows,Drama,Jazz,Rock,Alternative & Punk,Rock And Roll,Metal,Latin,Classical,Bossa Nova",6.481818859649123,38
+20,Dan Miller,USA,4,Park Margaret,338.62,7,"Latin,Alternative & Punk,Rock,Jazz,Bossa Nova,TV Shows,Metal",5.738028508771929,38
+22,Heather Leacock,USA,4,Park Margaret,338.62,7,"Rock,Latin,Blues,Alternative & Punk,TV Shows,Jazz,Metal,Rock And Roll",5.695107456140351,38
+42,Wyatt Girard,France,3,Peacock Jane,338.62,7,"Latin,Alternative & Punk,Rock,Sci Fi & Fantasy,Jazz,Metal,Rock And Roll",7.181548245614034,38
+40,Dominique Lefebvre,France,4,Park Margaret,336.62,7,"Latin,Rock,Jazz,Bossa Nova,Alternative & Punk,Drama,Metal",6.385502192982456,38
+19,Tim Goyer,USA,3,Peacock Jane,335.62,7,"Jazz,Alternative & Punk,Rock,Latin,Blues,R&B/Soul,Bossa Nova,Metal,TV Shows",4.939016228070175,38
+39,Camille Bernard,France,4,Park Margaret,335.62,7,"Classical,Rock,Metal,Drama,Alternative & Punk,Latin,Jazz",5.633197807017544,38
+58,Manoj Pareek,India,3,Peacock Jane,335.62,7,"Rock,Jazz,Latin,Blues,Alternative & Punk,Classical,Metal,TV Shows",5.725340350877193,38
+2,Leonie Köhler,Germany,5,Johnson Steve,334.62,7,"Rock,Pop,Soundtrack,Latin,Metal,Alternative & Punk,Blues",4.19290350877193,38
+8,Daan Peeters,Belgium,4,Park Margaret,334.62,7,"Rock,Metal,Alternative & Punk,R&B/Soul",4.458233333333333,38
+9,Kara Nielsen,Denmark,4,Park Margaret,334.62,7,"Metal,Pop,Rock,Latin,Alternative & Punk",4.535642982456141,38
+10,Eduardo Martins,Brazil,4,Park Margaret,334.62,7,"Latin,Rock,Metal,R&B/Soul,Soundtrack,Alternative & Punk,Reggae",4.680562719298245,38
+11,Alexandre Rocha,Brazil,5,Johnson Steve,334.62,7,"Metal,Rock,Reggae,Hip Hop/Rap,Alternative & Punk,Latin",3.564136403508772,38
+12,Roberto Almeida,Brazil,3,Peacock Jane,334.62,7,"Rock,Latin,Metal,World,Alternative & Punk",3.823132894736842,38
+13,Fernanda Ramos,Brazil,4,Park Margaret,334.62,7,"Rock,Metal,Blues,Latin,R&B/Soul,Pop,Classical",4.643975,38
+14,Mark Philips,Canada,5,Johnson Steve,334.62,7,"Rock,Jazz,Metal,Blues,Alternative & Punk,Bossa Nova,Latin,R&B/Soul,Electronica/Dance,World",4.528681140350877,38
+16,Frank Harris,USA,4,Park Margaret,334.62,7,"Jazz,Blues,Rock,Heavy Metal,Metal,Reggae,Latin",4.277600877192983,38
+18,Michelle Brooks,USA,3,Peacock Jane,334.62,7,"Latin,Blues,Rock,R&B/Soul,Jazz,Metal",4.8647719298245615,38
+21,Kathy Chase,USA,5,Johnson Steve,334.62,7,"Alternative & Punk,Metal,Jazz,Rock,R&B/Soul,Reggae,Latin,Pop,Soundtrack",4.5856530701754386,38
+23,John Gordon,USA,4,Park Margaret,334.62,7,"Alternative & Punk,Rock And Roll,Jazz,Metal,Blues,Latin,R&B/Soul,Pop,Rock",3.6556929824561406,38
+27,Patrick Gray,USA,4,Park Margaret,334.62,7,"Rock,Metal,Heavy Metal,Latin,Pop,Classical,Hip Hop/Rap,Blues,Alternative & Punk",5.156836842105263,38
+29,Robert Brown,Canada,3,Peacock Jane,334.62,7,"Rock,Latin,Alternative & Punk,Metal",4.476325438596492,38
+30,Edward Francis,Canada,3,Peacock Jane,334.62,7,"Rock,Alternative & Punk,Reggae,Metal,Hip Hop/Rap,Jazz",4.160578070175439,38
+31,Martha Silk,Canada,5,Johnson Steve,334.62,7,"Latin,Alternative & Punk,Rock,Metal,Jazz,World",4.496480701754386,38
+32,Aaron Mitchell,Canada,4,Park Margaret,334.62,7,"Rock,Metal,World,Latin,Reggae,Jazz,Blues",4.242838157894737,38
+33,Ellie Sullivan,Canada,3,Peacock Jane,334.62,7,"Alternative & Punk,Metal,Latin,Rock,R&B/Soul,Classical",4.043319298245614,38
+35,Madalena Sampaio,Portugal,4,Park Margaret,334.62,7,"Latin,Metal,Rock,Jazz,Heavy Metal,Blues",4.834442543859649,38
+36,Hannah Schneider,Germany,5,Johnson Steve,334.62,7,"Alternative & Punk,Rock,Blues,Heavy Metal,Metal,Latin",4.798936842105263,38
+38,Niklas Schröder,Germany,3,Peacock Jane,334.62,7,"Latin,Alternative & Punk,Rock,Alternative,Jazz,Metal,Blues",4.641116666666667,38
+41,Marc Dubois,France,5,Johnson Steve,334.62,7,"Classical,Reggae,Latin,Pop,Rock,Soundtrack,Metal,Alternative & Punk,Blues",4.287122368421052,38
+47,Lucas Mancini,Italy,5,Johnson Steve,334.62,7,"Latin,Alternative & Punk,Classical,Rock,Metal,Blues",3.6323236842105264,38
+49,Stanisław Wójcik,Poland,4,Park Margaret,334.62,7,"Latin,Rock,Alternative & Punk,Jazz,Blues",4.714648684210526,38
+50,Enrique Muñoz,Spain,5,Johnson Steve,334.62,7,"Metal,Rock,Alternative & Punk,Reggae,Hip Hop/Rap,Jazz,Latin",4.240604385964913,38
+52,Emma Jones,United Kingdom,3,Peacock Jane,334.62,7,"Latin,Reggae,Alternative & Punk,Metal,Rock",4.492342105263158,38
+53,Phil Hughes,United Kingdom,3,Peacock Jane,334.62,7,"Metal,Rock,Latin,R&B/Soul,Jazz,Alternative & Punk",4.442882456140351,38
+54,Steve Murray,United Kingdom,5,Johnson Steve,334.62,7,"Rock,Alternative & Punk,Latin,World,Metal,Pop,Hip Hop/Rap,Jazz",4.390208333333334,38
+55,Mark Taylor,Australia,4,Park Margaret,334.62,7,"Rock,Metal,Latin,Heavy Metal,Blues,Reggae",5.317228070175438,38
+56,Diego Gutiérrez,Argentina,4,Park Margaret,334.62,7,"Rock,Alternative & Punk,Metal,Jazz,Latin,Easy Listening,Soundtrack",3.9462307017543856,38
+59,Puja Srivastava,India,3,Peacock Jane,331.65999999999997,6,"Rock,R&B/Soul,Sci Fi & Fantasy,Metal,Latin,Alternative & Punk,Jazz",5.557255092592593,36
